@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary--: #0b213e;
+  --secondary--: #1c83e5;
+  --gray--: #838383;
+  --searchbox--: #d0d0d22a;
+  --white--: #fcfcfc;
+}
+
+.text_primary {
+  color: var(--primary--);
+}
+
+.text_secondary {
+  color: var(--secondary--);
+}
+
+.text_gray {
+  color: var(--gray--);
+}
+
+.bg_primary {
+  background-color: var(--primary--);
+}
+
+.bg_secondary {
+  background-color: var(--secondary--) !important;
+}
+
+.bg_gray {
+  background-color: var(--secondary--);
+}
+
+.bg_searchbox {
+  background-color: var(--searchbox--);
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.bg_white {
+  background-color: var(--white--);
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fw-1000 {
+  font-weight: 1000;
+}
+
+.fs__large__1 {
+  font-size: 3.5rem;
+}
+
+.fs-7 {
+  font-size: 16px;
+}
+
+.fs-8 {
+  font-size: 15px;
+}
+
+.fs-9 {
+  font-size: 14px;
+}
+
+.fs-10 {
+  font-size: 13px;
+}
+
+.fs-11 {
+  font-size: 12px;
+}
+
+.fs-12 {
+  font-size: 11px;
+}
+
+/* Logo setting */
+.navbar-brand>img.logo {
+  width: 180px;
+}
+
+.nav-link {
+  color: var(--primary--) !important;
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
+.nofocus:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.dropdown-toggle::after {
+  color: var(--secondary--) !important;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+  background-color: var(--searchbox--);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.btn_outline_secondary {
+  border: 1px solid var(--secondary--) !important;
+  background-color: #fff !important;
+  color: var(--secondary--) !important;
+  padding: 8px 16px !important;
+}
+
+.btn {
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+}
+
+.card__auction {
+  width: 260px;
+  padding: 30px 20px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  position: relative;
+}
+
+.card__auction>.card__auction__img img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.card__auction>.card__content {
+  margin-top: 20px;
+}
+
+.card__auction>.card__content>div.justify-content-between>div.d-flex>div>img.card__auction__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.card__auction>.card__countDown>div {
+  background-color: var(--primary--);
+  padding: 3px 15px;
+  position: absolute;
+  top: 15px;
+  color: #fff;
+}
+
+.comparison__white {
+  background: #f5f5f5;
+  border: 1px solid #d7d7d7;
+  box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12),
+    0px 12px 42px -4px rgba(24, 39, 75, 0.12);
+  padding: 30px 20px;
+  border-radius: 8px;
+  width: 260px;
+}
+
+.comparison__lt_blue {
+  background: #E6EFFA;
+  border: 1px solid #d7d7d7;
+  box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12),
+    0px 12px 42px -4px rgba(24, 39, 75, 0.12);
+  padding: 30px 20px;
+  border-radius: 8px;
+  width: 260px;
+}
+
+.comparison__white>.comparison__content>.comparison__avatar img {
+  width: 60px;
+  border-radius: 8px;
+
+}
+
+.comparison__lt_blue>.comparison__content>.comparison__avatar img {
+  width: 60px;
+  border-radius: 8px;
+
+}
+
+.NewsLetter__Content {
+
+  border-radius: 25px;
+}
+
+.Input__div {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.slider-img {
+  max-width: 190px;
+}
+
+.banner {
+  height: 90vh;
+}
+
+.trans {
+  transform: rotate(-10deg);
+  display: flex;
+  position: relative;
+  /* z-index: -1; */
+  /* overflow: hidden; */
+}
+
+/* .slider-single{
+max-height: 100vh ;
+overflow: hidden;
+} */
+.fading-div {
+  background-color: white;
+  height: 230px;
+  width: 100%;
+  position: absolute;
+  bottom: 13%;
+  opacity: 0.5;
+  left: 9%;
+  filter: blur(30px);
+}
+
+.position-r {
+  position: relative !important;
+}

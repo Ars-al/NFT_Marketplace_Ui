@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nft Market Place</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+</head>
+
+<body>
+
+    <!-- Our Header starts here -->
+
+
+
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar-light bg_white ">
+            <div class="container ">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" alt="" class=" logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-lg-start text-center" id="navbarSupportedContent">
+                    <div class="search ms-lg-4 mt-lg-0 mt-4">
+                        <img src="assets/images/Search.svg" alt="search icon">
+                        <input class="border-0 bg-transparent nofocus" type="search" placeholder="Search"
+                            aria-label="Search">
+
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-lg-start text-center ms-lg-2">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                New Items
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Featured Artist
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Contact us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+
+
+                    <button class="btn  bg_secondary text-white" type="submit">Create NFT</button>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="banner overflow">
+        <div class="container">
+            <div class="row mx-0 align-items-center gap-lg-0 gap-5 ">
+                <div class="col-lg-5 ps-0">
+                    <h1 class="text_primary fs__large__1 fw-800 mt-lg-0 mt-5">
+                        A New Way to Appreciate the <span class="text_secondary">Artworks.</span>
+                    </h1>
+                    <p class="text_gray">
+                        Find the most attractive and rarest NFTs to be your collection
+
+                    </p>
+                    <div class="d-flex gap-4 align-items-center">
+                        <button class="btn bg_secondary text-white">
+                            <img src="assets/images/compass.svg" alt="">
+                            <span class="ms-3">Explore</span>
+                        </button>
+                        <button class="btn btn_outline_secondary">
+                            Learn more
+                            <img src="assets/images/Arrow-r.svg" alt="" class="ms-3">
+
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-7 pe-0 slider-bg position-r">
+
+                    <!-- <img src="assets/images/banner_img.png" class="w-100" alt=""> -->
+                    <div class="trans">
+                        
+                        
+                        <div class="slider-single">
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-single">
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                        </div>
+                     
+                        <div class="slider-single">
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                            <div class="p-3 d-flex">
+                                <img src="assets/images/image.png" class="slider-img" alt="">
+                            </div>
+                        </div>
+                    
+
+                    </div>
+                    <div class="fading-div">
+                        gvhcbvmvn mn 
+                    </div> 
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="live_auctions container my-5">
+        <div
+            class="d-flex justify-content-lg-between  align-items-center  flex-wrap justify-content-center gap-3 gap-lg-0">
+            <div>
+                <h2 class="text_primary fw-700">
+                    Live Auctions
+                </h2>
+                <p class="text_gray">
+                    Complete with others to get the rarest NFT items
+                </p>
+            </div>
+            <div>
+                <p class="text_primary fw-600 mb-0">Explore More</p>
+                <div class="d-flex justify-content-lg-end justify-content-center">
+                    <span style="width: 60px; height:2px; display: flex; background-color: var(--secondary--); "></span>
+                </div>
+            </div>
+        </div>
+        <!-- Cards Main Div -->
+        <div class="d-flex justify-content-lg-between justify-content-center gap-4 flex-wrap">
+            <div class="card__auction">
+                <div class="card__auction__img">
+                    <img src="assets/images/card_img.png" alt="">
+                </div>
+                <div class="card__content">
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5 text_primary">
+                            Abstract Nature
+                        </p>
+                        <span class="text_primary fs-5">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex gap-3">
+                            <div>
+                                <img src="assets/images/card_img.png" alt="" class="card__auction__avatar">
+                            </div>
+                            <div>
+                                <p class="mb-0 text_gray fs-9">Created By</p>
+                                <p class="mb-0 text_primary fs-9 fw-500">Jim Xnyxc</p>
+                            </div>
+                        </div>
+
+                        <span class="text_secondary fs-5">
+                            5.1 ETH
+                        </span>
+                    </div>
+                    <div class="btn btn_outline_secondary w-100 mt-3">
+                        Place Bid
+                    </div>
+
+                </div>
+                <div class="card__countDown d-flex justify-content-center">
+                    <div class="rounded-3">
+                        <i class="fa-solid fa-clock me-3 "></i> 02: 01 : 11
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__auction">
+                <div class="card__auction__img">
+                    <img src="assets/images/card_img.png" alt="">
+                </div>
+                <div class="card__content">
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5 text_primary">
+                            Abstract Nature
+                        </p>
+                        <span class="text_primary fs-5">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex gap-3">
+                            <div>
+                                <img src="assets/images/card_img.png" alt="" class="card__auction__avatar">
+                            </div>
+                            <div>
+                                <p class="mb-0 text_gray fs-9">Created By</p>
+                                <p class="mb-0 text_primary fs-9 fw-500">Jim Xnyxc</p>
+                            </div>
+                        </div>
+
+                        <span class="text_secondary fs-5">
+                            5.1 ETH
+                        </span>
+                    </div>
+                    <div class="btn btn_outline_secondary w-100 mt-3">
+                        Place Bid
+                    </div>
+
+                </div>
+                <div class="card__countDown d-flex justify-content-center">
+                    <div class="rounded-3">
+                        <i class="fa-solid fa-clock me-3 "></i> 02: 01 : 11
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__auction">
+                <div class="card__auction__img">
+                    <img src="assets/images/card_img.png" alt="">
+                </div>
+                <div class="card__content">
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5 text_primary">
+                            Abstract Nature
+                        </p>
+                        <span class="text_primary fs-5">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex gap-3">
+                            <div>
+                                <img src="assets/images/card_img.png" alt="" class="card__auction__avatar">
+                            </div>
+                            <div>
+                                <p class="mb-0 text_gray fs-9">Created By</p>
+                                <p class="mb-0 text_primary fs-9 fw-500">Jim Xnyxc</p>
+                            </div>
+                        </div>
+
+                        <span class="text_secondary fs-5">
+                            5.1 ETH
+                        </span>
+                    </div>
+                    <div class="btn btn_outline_secondary w-100 mt-3">
+                        Place Bid
+                    </div>
+
+                </div>
+                <div class="card__countDown d-flex justify-content-center">
+                    <div class="rounded-3">
+                        <i class="fa-solid fa-clock me-3 "></i> 02: 01 : 11
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__auction">
+                <div class="card__auction__img">
+                    <img src="assets/images/card_img.png" alt="">
+                </div>
+                <div class="card__content">
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5 text_primary">
+                            Abstract Nature
+                        </p>
+                        <span class="text_primary fs-5">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex gap-3">
+                            <div>
+                                <img src="assets/images/card_img.png" alt="" class="card__auction__avatar">
+                            </div>
+                            <div>
+                                <p class="mb-0 text_gray fs-9">Created By</p>
+                                <p class="mb-0 text_primary fs-9 fw-500">Jim Xnyxc</p>
+                            </div>
+                        </div>
+
+                        <span class="text_secondary fs-5">
+                            5.1 ETH
+                        </span>
+                    </div>
+                    <div class="btn btn_outline_secondary w-100 mt-3">
+                        Place Bid
+                    </div>
+
+                </div>
+                <div class="card__countDown d-flex justify-content-center">
+                    <div class="rounded-3">
+                        <i class="fa-solid fa-clock me-3 "></i> 02: 01 : 11
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__auction">
+                <div class="card__auction__img">
+                    <img src="assets/images/card_img.png" alt="">
+                </div>
+                <div class="card__content">
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5 text_primary">
+                            Abstract Nature
+                        </p>
+                        <span class="text_primary fs-5">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex gap-3">
+                            <div>
+                                <img src="assets/images/card_img.png" alt="" class="card__auction__avatar">
+                            </div>
+                            <div>
+                                <p class="mb-0 text_gray fs-9">Created By</p>
+                                <p class="mb-0 text_primary fs-9 fw-500">Jim Xnyxc</p>
+                            </div>
+                        </div>
+
+                        <span class="text_secondary fs-5">
+                            5.1 ETH
+                        </span>
+                    </div>
+                    <div class="btn btn_outline_secondary w-100 mt-3">
+                        Place Bid
+                    </div>
+
+                </div>
+                <div class="card__countDown d-flex justify-content-center">
+                    <div class="rounded-3">
+                        <i class="fa-solid fa-clock me-3 "></i> 02: 01 : 11
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__auction">
+                <div class="card__auction__img">
+                    <img src="assets/images/card_img.png" alt="">
+                </div>
+                <div class="card__content">
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5 text_primary">
+                            Abstract Nature
+                        </p>
+                        <span class="text_primary fs-5">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex gap-3">
+                            <div>
+                                <img src="assets/images/card_img.png" alt="" class="card__auction__avatar">
+                            </div>
+                            <div>
+                                <p class="mb-0 text_gray fs-9">Created By</p>
+                                <p class="mb-0 text_primary fs-9 fw-500">Jim Xnyxc</p>
+                            </div>
+                        </div>
+
+                        <span class="text_secondary fs-5">
+                            5.1 ETH
+                        </span>
+                    </div>
+                    <div class="btn btn_outline_secondary w-100 mt-3">
+                        Place Bid
+                    </div>
+
+                </div>
+                <div class="card__countDown d-flex justify-content-center">
+                    <div class="rounded-3">
+                        <i class="fa-solid fa-clock me-3 "></i> 02: 01 : 11
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__auction">
+                <div class="card__auction__img">
+                    <img src="assets/images/card_img.png" alt="">
+                </div>
+                <div class="card__content">
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5 text_primary">
+                            Abstract Nature
+                        </p>
+                        <span class="text_primary fs-5">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex gap-3">
+                            <div>
+                                <img src="assets/images/card_img.png" alt="" class="card__auction__avatar">
+                            </div>
+                            <div>
+                                <p class="mb-0 text_gray fs-9">Created By</p>
+                                <p class="mb-0 text_primary fs-9 fw-500">Jim Xnyxc</p>
+                            </div>
+                        </div>
+
+                        <span class="text_secondary fs-5">
+                            5.1 ETH
+                        </span>
+                    </div>
+                    <div class="btn btn_outline_secondary w-100 mt-3">
+                        Place Bid
+                    </div>
+
+                </div>
+                <div class="card__countDown d-flex justify-content-center">
+                    <div class="rounded-3">
+                        <i class="fa-solid fa-clock me-3 "></i> 02: 01 : 11
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__auction">
+                <div class="card__auction__img">
+                    <img src="assets/images/card_img.png" alt="">
+                </div>
+                <div class="card__content">
+                    <div class="d-flex justify-content-between">
+                        <p class="fs-5 text_primary">
+                            Abstract Nature
+                        </p>
+                        <span class="text_primary fs-5">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex gap-3">
+                            <div>
+                                <img src="assets/images/card_img.png" alt="" class="card__auction__avatar">
+                            </div>
+                            <div>
+                                <p class="mb-0 text_gray fs-9">Created By</p>
+                                <p class="mb-0 text_primary fs-9 fw-500">Jim Xnyxc</p>
+                            </div>
+                        </div>
+
+                        <span class="text_secondary fs-5">
+                            5.1 ETH
+                        </span>
+                    </div>
+                    <div class="btn btn_outline_secondary w-100 mt-3">
+                        Place Bid
+                    </div>
+
+                </div>
+                <div class="card__countDown d-flex justify-content-center">
+                    <div class="rounded-3">
+                        <i class="fa-solid fa-clock me-3 "></i> 02: 01 : 11
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="Comparison container">
+        <h2 class="text_primary fw-600">
+            Have a comparison
+
+        </h2>
+        <p class="text_gray">
+            Compete with others to get the rarest NFT items
+        </p>
+
+        <div class="d-flex justify-content-lg-between justify-content-center gap-4 flex-wrap">
+            <div class="comparison__white">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+                <hr style="color: #ccc;">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+                <hr style="color: #ccc;">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+                <hr style="color: #ccc;">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="comparison__lt_blue">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+                <hr style="color: #ccc;">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+                <hr style="color: #ccc;">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+                <hr style="color: #ccc;">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="comparison__white">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+                <hr style="color: #ccc;">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+                <hr style="color: #ccc;">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+                <hr style="color: #ccc;">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="comparison__lt_blue">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+                <hr style="color: #ccc;">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+                <hr style="color: #ccc;">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+                <hr style="color: #ccc;">
+                <div class="d-flex gap-3 align-items-center comparison__content">
+                    <div class="comparison__avatar">
+                        <img src="assets/images/card_img.png" alt="">
+                    </div>
+                    <div>
+                        <p class="mb-0 text_primary fw-600">Sara cobalt</p>
+                        <p class="mb-0 text_gray">250.08 ETH</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="Investors container mt-5">
+
+        <h2 class="text_primary fw-600">
+            Investors & Partners
+
+        </h2>
+        <div class="d-flex justify-content-lg-start justify-content-center gap-5 flex-wrap mt-5 align-items-center">
+            <img class="img-fluid" src="assets/images/FREEZE DIGITAL GROUP.png" alt="">
+            <img class="img-fluid" src="assets/images/Hubert Enterprise.png" alt="">
+            <img class="img-fluid" src="assets/images/New World Bar.png" alt="">
+            <img class="img-fluid" src="assets/images/TECH 4.0.png" alt="">
+            <img class="img-fluid" src="assets/images/ONE BEAT.png" alt="">
+            <img class="img-fluid" src="assets/images/Hubert Enterprise.png" alt="">
+        </div>
+
+
+    </section>
+
+    <section class="Newsletter container mt-5">
+
+        <div class="NewsLetter__Content" style="background-color: #E6EFFA;">
+            <div
+                class="d-flex justify-content-lg-between gap-4 justify-content-center flex-lg-nowrap flex-wrap align-items-center">
+                <div class="p-5">
+                    <h2 class="text_primary fw-600">
+                        Signup for our newsletter to get the latest information in your inbox
+                    </h2>
+                    <p class="text_gray">
+                        No spam message, your email is safe with us
+                    </p>
+                    <div class="Input__div ">
+                        <input type="text" class="bg-transparent border-0 nofocus w-100"
+                            placeholder="Enter your Email address here ...">
+
+                        <button class="btn bg_secondary text-white">Subscribe</button>
+
+                    </div>
+                </div>
+                <div class="py-2 px-2">
+                    <img src="assets/images/card_img.png" alt="">
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <footer class="container mt-5 pt-5">
+        <div class="row mx-0">
+            <div class="col-lg-4">
+                <img src="assets/images/logo.png" class="img-fluid" alt="logo">
+                <p class="text_gray mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque laboriosam
+
+                </p>
+            </div>
+            <div class="col-lg-8">
+
+                <div class="d-flex justify-content-between ps-lg-5 ms-lg-5 flex-wrap gap-4">
+                    <div>
+                        <p class="text_primary fw-600">About Us</p>
+                        <p class="mt-4 text_gray">
+                            About
+                        </p>
+                        <p class="mt-3 text_gray">
+                            Contact
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text_primary fw-600">Links</p>
+                        <p class="mt-4 text_gray">
+                            About
+                        </p>
+                        <p class="mt-3 text_gray">
+                            Contact
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text_primary fw-600">Community Links</p>
+                        <p class="mt-4 text_gray">
+                            About
+                        </p>
+                        <p class="mt-3 text_gray">
+                            Contact
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text_primary fw-600">Social Media</p>
+                        <div class="mt-4 d-flex align-items-center gap-4">
+                            <div class="p-2 bg_secondary d-flex justify-content-center align-items-center rounded-3"
+                                style="height: 30px; width:30px;">
+                                <i class="fa-brands fa-linkedin fs-4 text-white"></i>
+                            </div>
+                            <div class="p-2 bg_secondary d-flex justify-content-center align-items-center rounded-3"
+                                style="height: 30px; width:30px;">
+                                <i class="fa-brands fa-twitter fs-4 text-white"></i>
+                            </div>
+                            <div class="p-2 bg_secondary d-flex justify-content-center align-items-center rounded-3"
+                                style="height: 30px; width:30px;">
+                                <i class="fa-brands fa-facebook fs-4 text-white"></i>
+                            </div>
+
+                            <div class="p-2 bg_secondary d-flex justify-content-center align-items-center rounded-3"
+                                style="height: 30px; width:30px;">
+                                <i class="fa-brands fa-instagram fs-4 text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr class="text_gray">
+        <p class="text-center text_gray">
+            Copyright &copy; 2022 nft market. All Rights Reserved
+        </p>
+    </footer>
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="assets/js/index.js"></script>
+
+</html>
